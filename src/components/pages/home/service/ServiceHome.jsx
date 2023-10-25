@@ -1,4 +1,7 @@
-const ServiceHome = () => {
+import PropTypes from "prop-types";
+import ServiceCard from "./ServiceCard";
+
+const ServiceHome = ({ services }) => {
   return (
     <div className="">
       <div className="space-y-3 lg:space-y-5 text-center">
@@ -12,8 +15,16 @@ const ServiceHome = () => {
           believable.
         </p>
       </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-12">
+        {services.map((service) => (
+          <ServiceCard key={service._id} service={service}></ServiceCard>
+        ))}
+      </div>
     </div>
   );
 };
 
+ServiceHome.propTypes = {
+  services: PropTypes.array.isRequired,
+};
 export default ServiceHome;

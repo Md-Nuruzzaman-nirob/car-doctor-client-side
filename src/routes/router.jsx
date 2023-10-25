@@ -7,6 +7,7 @@ import Services from "../components/pages/services/Services";
 import Blog from "../components/pages/blog/Blog";
 import Contact from "../components/pages/contact/Contact";
 import Cart from "../components/pages/cart/Cart";
+import ServiceDetails from "../components/pages/info/ServiceDetails";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: () => fetch("/services.json"),
       },
       {
         path: "/about",
@@ -37,6 +39,11 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart></Cart>,
+      },
+      {
+        path: "/service/details/:id",
+        element: <ServiceDetails></ServiceDetails>,
+        loader: () => fetch("/services.json"),
       },
     ],
   },

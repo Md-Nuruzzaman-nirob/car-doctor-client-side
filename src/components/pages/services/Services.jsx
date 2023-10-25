@@ -1,6 +1,6 @@
 const Services = () => {
   return (
-    <div>
+    <div className="min-h-screen">
       <h3>services</h3>
       <h1></h1>
     </div>

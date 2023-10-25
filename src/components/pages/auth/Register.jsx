@@ -1,6 +1,6 @@
 const Register = () => {
   return (
-    <div>
+    <div className="min-h-screen">
       <h3>register</h3>
     </div>
   );

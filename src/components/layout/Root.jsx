@@ -11,7 +11,7 @@ const Root = () => {
       <main className="max-w-7xl mx-5 md:mx-10 xl:mx-auto">
         <Outlet></Outlet>
       </main>
-      <footer>
+      <footer className="bg-black">
         <Footer></Footer>
       </footer>
     </div>
