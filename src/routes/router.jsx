@@ -8,6 +8,7 @@ import Blog from "../components/pages/blog/Blog";
 import Contact from "../components/pages/contact/Contact";
 import Cart from "../components/pages/cart/Cart";
 import ServiceDetails from "../components/pages/info/ServiceDetails";
+import CheckOut from "../components/pages/info/CheckOut";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,8 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("/services.json"),
+        loader: () =>
+          fetch("https://car-doctor-server-seven-coral.vercel.app/services"),
       },
       {
         path: "/about",
@@ -41,9 +43,16 @@ const router = createBrowserRouter([
         element: <Cart></Cart>,
       },
       {
-        path: "/service/details/:id",
+        path: "/serviceDetails/:id",
         element: <ServiceDetails></ServiceDetails>,
-        loader: () => fetch("/services.json"),
+        loader: () =>
+          fetch("https://car-doctor-server-seven-coral.vercel.app/services"),
+      },
+      {
+        path: "/Checkout/:id",
+        element: <CheckOut></CheckOut>,
+        loader: () =>
+          fetch("https://car-doctor-server-seven-coral.vercel.app/services"),
       },
     ],
   },

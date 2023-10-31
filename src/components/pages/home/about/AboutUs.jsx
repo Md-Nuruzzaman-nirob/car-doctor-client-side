@@ -37,7 +37,7 @@ const AboutUs = () => {
         </p>
         <Link
           to={"/about"}
-          className="btn btn-sm md:btn-md text-white hover:text-black bg-[#FF3811] border-[#FF3811] hover:border-[#FF3811] hover:bg-transparent font-Ubuntu font-bold md:text-lg normal-case"
+          className="btn btn-sm md:btn-md text-white hover:text-black dark:hover:text-gray-300 bg-[#FF3811] border-[#FF3811] hover:border-[#FF3811] hover:bg-transparent font-Ubuntu font-bold md:text-lg normal-case"
         >
           Get More Info
         </Link>
