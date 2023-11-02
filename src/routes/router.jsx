@@ -41,6 +41,8 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart></Cart>,
+        loader: () =>
+          fetch("https://car-doctor-server-seven-coral.vercel.app/orders"),
       },
       {
         path: "/serviceDetails/:id",

@@ -60,7 +60,7 @@ const CheckOut = () => {
         </h3>
       </div>
 
-      <div className="px-4 md:px-10 lg:px-16 xl:px-28 py-10 md:py-16 lg:py-20 bg-[#F3F3F3] mb-16 md:mb-20 lg:mb-28 rounded-xl mt-32">
+      <div className="px-4 md:px-10 lg:px-16 xl:px-28 py-10 md:py-16 lg:py-20 bg-[#F3F3F3] dark:bg-black mb-16 md:mb-20 lg:mb-28 rounded-xl mt-32">
         <div className="text-5xl font-bold text-center mb-10">
           <p className="text-xl font-medium">order for :</p>
           <h3>{title}</h3>
@@ -72,7 +72,7 @@ const CheckOut = () => {
                 type="text"
                 id="firstName"
                 name="firstName"
-                className="text-sm rounded-md w-full px-3 py-2 bg-[#feffff] text-[#17252a] border focus:border-[#FF3811] focus-bg-[#feffff] outline-none"
+                className="text-sm rounded-md w-full px-3 py-2 bg-[#feffff] text-[#17252a] border focus:border-[#FF3811] focus-bg-[#feffff] outline-none dark:bg-gray-800 dark:text-[#feffff] dark:border-gray-800 dark:focus:border-[#feffff]"
                 placeholder="First Name"
                 required
               />
@@ -83,7 +83,7 @@ const CheckOut = () => {
                 type="text"
                 id="lastName"
                 name="lastName"
-                className="text-sm rounded-md w-full px-3 py-2 bg-[#feffff] text-[#17252a] border focus:border-[#FF3811] focus-bg-[#feffff] outline-none"
+                className="text-sm rounded-md w-full px-3 py-2 bg-[#feffff] text-[#17252a] border focus:border-[#FF3811] focus-bg-[#feffff] outline-none dark:bg-gray-800 dark:text-[#feffff] dark:border-gray-800 dark:focus:border-[#feffff]"
                 placeholder="Last Name"
                 required
               />
@@ -96,7 +96,7 @@ const CheckOut = () => {
                 type="tel"
                 id="phone"
                 name="phone"
-                className="text-sm rounded-md w-full px-3 py-2 bg-[#feffff] text-[#17252a] border focus:border-[#FF3811] focus-bg-[#feffff] outline-none"
+                className="text-sm rounded-md w-full px-3 py-2 bg-[#feffff] text-[#17252a] border focus:border-[#FF3811] focus-bg-[#feffff] outline-none dark:bg-gray-800 dark:text-[#feffff] dark:border-gray-800 dark:focus:border-[#feffff]"
                 placeholder="Your Phone"
               />
             </div>
@@ -105,7 +105,7 @@ const CheckOut = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="text-sm rounded-md w-full px-3 py-2 bg-[#feffff] text-[#17252a] border focus:border-[#FF3811] focus-bg-[#feffff] outline-none"
+                className="text-sm rounded-md w-full px-3 py-2 bg-[#feffff] text-[#17252a] border focus:border-[#FF3811] focus-bg-[#feffff] outline-none dark:bg-gray-800 dark:text-[#feffff] dark:border-gray-800 dark:focus:border-[#feffff]"
                 placeholder="Your Email"
                 required
               />
@@ -116,7 +116,7 @@ const CheckOut = () => {
             <textarea
               id="message"
               name="message"
-              className="rounded-md w-full h-60 px-3 py-2 bg-[#feffff] text-[#17252a] border focus:border-[#FF3811] overflow-hidden outline-none"
+              className="rounded-md w-full h-60 px-3 py-2 bg-[#feffff] text-[#17252a] border focus:border-[#FF3811] overflow-hidden outline-none dark:bg-gray-800 dark:text-[#feffff] dark:border-gray-800 dark:focus:border-[#feffff]"
               placeholder="Your Message"
             />
           </div>
